@@ -1,0 +1,101 @@
+.login-page {
+    position: relative;
+}
+
+.login-form {
+    background-color: #435c70;
+    padding: 40px;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.login-form h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.login-form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form span {
+    margin: 10px 0;
+}
+
+.login-form input, .login-form button {
+    width: 100%;
+}
+
+.login-form input {
+    padding: 19px 18px;
+    border-radius: 0;
+    height: 50px;
+    background-color: #54657d;
+    color: #fff;
+    border: 0;
+    border-bottom: 4px solid transparent;
+}
+
+.login-form button {
+    border: unset;
+    outline: unset;
+    padding: 13px 28px;
+    transition: all 0.2s ease;
+    font-size: 90%;
+    font-weight: 600;
+    background-color: #f5a623;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+}
+
+.login-form button:hover {
+    color: #f5a623;
+    background-color: transparent;
+    border: 2px solid #f5a623;
+}
+
+.login-form button {
+    margin-top: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.login-val, .pass-val {
+    display: none;
+    font-size: .9em;
+    text-align: left;
+    color: #E15D44;
+}
+
+@media screen and (max-width: 414px) {
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-from input {
+        padding: 10px;
+        height: 40px;
+    }
+
+    .login-val, .pass-val {
+        padding: 0;
+        list-style-position: inside;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
+    .login-form h2 {
+        font-size: 1em;
+    }
+
+}

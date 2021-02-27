@@ -1,0 +1,152 @@
+header {
+    background-color: #567086;
+    height: 95px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+}
+
+h1 {
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+}
+
+.top-menu div {
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.top-menu div {
+    padding: 20px;
+}
+
+.nav-link + .nav-link {
+    margin-left: 20px;
+}
+
+header p {
+    margin: 0;
+}
+
+header a {
+    color: white;
+    transition: color .2s;
+}
+
+.nav-link:hover {
+    color: #f5a623;
+}
+
+header i {
+    font-size: 1.5em;
+}
+
+header p i {
+    font-size: .9em;
+}
+
+.header-content div span {
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    display: none;
+    border: 1px solid #708da8;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
+    padding: 10px 15px;
+    -webkit-appearance: button;
+    margin-left: auto;
+    margin-right: 0;
+    color: white;
+    background-color: #567086;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.navbar-toggler:hover {
+    border: 1px solid #f5a623;
+    color:#f5a623;
+}
+
+.hidden-menu {
+    width: 180px;
+    position: absolute;
+    padding: 0;
+    top: 65px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #567086;
+    text-align: center;
+    transition: .4s;
+}
+
+.hidden-menu.show {
+    height: 180px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0px 1px;
+    overflow: visible;
+}
+
+.hidden-menu.hide {
+    height: 0;
+    box-shadow: unset;
+    overflow: hidden;
+}
+
+.hidden-menu>a>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.hidden-menu>a>div>i {
+    margin-right: 10px;
+}
+
+.hidden-menu .nav-link{
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+.is-active>div {
+    background-color: #f5a623;
+}
+
+.is-active:hover {
+    color:white;
+}
+
+@media screen and (min-width: 800px) {
+    .hidden-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 65px;
+        z-index: 100;
+    }
+
+    .top-menu, .logout {
+        display: none;
+    }
+
+    .navbar-toggler, .hidden-menu .logout {
+        display: block;
+    }
+}

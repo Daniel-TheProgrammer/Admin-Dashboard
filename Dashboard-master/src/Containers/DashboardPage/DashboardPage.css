@@ -1,0 +1,204 @@
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.charts>div {
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 350px;
+}
+
+.latest-hits, .performance, .storage, .notification {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 50%;
+    width: 100%;
+}
+
+.latest-hits>div, .performance>div, .storage>div, .notification>div {
+    padding: 40px;
+    box-shadow: 1px 1px 5px 0#455c71;
+    max-height: 450px;
+    background-color:#435c70;
+}
+
+.dashboard h2 {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+.greeting {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-left: 15px;
+}
+
+.order {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.order>div {
+    padding: 30px;
+    box-shadow: 1px 1px 5px 0 #455c71;
+    background-color: #435c70;
+    height: 100%;
+}
+
+.order table td, .order table th {
+    min-width: 120px;
+}
+
+.order-table-wrapper {
+    max-height: 415px;
+    overflow-y: scroll;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.notification>div {
+    height: 412px;
+    overflow: hidden;
+}
+
+.notification-block {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.notification-item {
+    padding: 8px;
+    background-color: #4e657a;
+    color: #fff;
+    font-size: 80%;
+    display: flex;
+}
+
+.notification-item + .notification-item {
+    margin-top: 15px;
+}
+
+.notification-thumbnail>img {
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.notification-desc {
+    padding: 0 10px;
+}
+
+.notification-desc>p {
+    margin-bottom: .5rem;
+    margin-top: 5px;
+}
+
+.notification-desc>span {
+    font-size: 90%;
+    color: #bdcbd8;
+}
+
+.table {
+    background-color: #50697f;
+    color: #fff;
+    font-size: 85%;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead {
+    background-color: #486177;
+    color: #fff;
+}
+
+.order .table thead th {
+    border-bottom: 0;
+    vertical-align: bottom;
+}
+
+.order .table th, .order .table td {
+    border-top: 1px solid #415a70;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.moving {
+    background-color: #9be64d;
+    box-shadow: 0 0 8px #9be64d, inset 0 0 8px #9be64d;
+}
+
+.pending {
+    background-color: #efc54b;
+    box-shadow: 0 0 8px #efc54b, inset 0 0 8px #efc54b;
+}
+
+.cancelled {
+    background-color: #da534f;
+    box-shadow: 0 0 8px #da534f, inset 0 0 8px #da534f;
+}
+
+.delivered {
+    background-color: #3889fc;
+    box-shadow: 0 0 8px #3889fc, inset 0 0 8px #3889fc;
+}
+
+.tm-status-circle {
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+@media screen and (max-width: 1199px) {
+    .greeting {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+
+    .order {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .latest-hits, .performance, .storage, .notification {
+        width: 100%;
+        max-width: 60%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .latest-hits>div, .performance>div, .storage>div, .notification>div {
+        max-height: max-content;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .latest-hits, .performance, .storage, .notification {
+        max-width: 70%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .latest-hits, .performance, .storage, .notification {
+        max-width: 100%;
+    }
+
+}

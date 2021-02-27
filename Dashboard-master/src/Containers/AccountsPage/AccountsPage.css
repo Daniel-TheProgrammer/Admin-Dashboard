@@ -1,0 +1,222 @@
+.accounts-content {
+    background-color: #435c70;
+    padding: 40px;
+}
+
+.tm-content-row {
+    margin-top: 30px;
+}
+
+.tm-content-row {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tm-col-avatar {
+    max-width: 425px;
+    width: 37%;
+}
+
+.tm-block-avatar {
+    height: auto;
+}
+
+.tm-block-avatar, .tm-block-settings {
+    max-height: none;
+    box-shadow: 1px 1px 5px 0 #455c71;
+}
+
+.tm-bg-primary-dark {
+    background-color: #435c70;
+}
+
+.tm-block {
+    padding: 40px;
+    box-shadow: 1px 1px 5px 0 #455c71;
+    min-height: 350px;
+    height: auto;
+}
+
+.tm-avatar-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tm-avatar {
+    width: 345px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.tm-avatar-delete-link {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    z-index: 1000;
+    padding: 14px;
+    border-radius: 50%;
+    background-color: rgba(57, 78, 100, 0.7);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: none;
+    transition: all 0.2s ease;
+}
+
+.tm-product-delete-icon {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.tm-avatar-container:hover .tm-avatar-delete-link {
+    display: block;
+}
+
+.tm-col-account-settings {
+    max-width: 822px;
+    width: 60%;
+}
+
+.tm-signup-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 50%;
+    padding: 5px 10px;
+}
+
+.form-group label {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: 0;
+    padding: 10px 18px;
+    border-radius: 0;
+    height: 50px;
+}
+
+.mb-4, .my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.confirm-popUp {
+    display: none;
+    width: 300px;
+    text-align: center;
+    position: fixed;
+    border-radius: 10px;
+    left: 50%;
+    padding: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #394f62;
+    box-shadow: 1px 1px 4px 0 #455c71;
+    z-index: 5;
+
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.confirm-popUp h2 {
+    font-size: 1.2em;
+}
+
+.confirm-popUp button{
+    outline: unset;
+    border: unset;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+
+    color:#fff;
+    background-color:#f5a623;
+    border: 2px solid#f5a623;
+    font-weight: 600;
+    padding: 5px 28px;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.confirm-popUp button:hover {
+    color:#f5a623;
+    background-color: transparent;
+    border: 2px solid#f5a623;
+}
+
+@media screen and (max-width: 991px) {
+    .tm-content-row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tm-col-account-settings {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .tm-col-avatar {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .tm-signup-form {
+        flex-direction: column;
+    }
+
+    .tm-signup-form .form-group {
+        width: 100%;
+    }
+    
+    .tm-hide-sm {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .tm-block {
+        padding: 40px 20px;
+    }
+    
+    .form-group button {
+        font-size: .8em
+    }
+}
